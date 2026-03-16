@@ -81,7 +81,10 @@
     border-radius:10px 10px 0 0;
     font-size:18px;
     }
+    
+    
     @media (width >= 768px){
+    
     .layout{
     flex-direction:row;
     }
@@ -100,4 +103,5 @@
     .cards{
     grid-template-columns:1fr 1fr;
     }
+    
     }
