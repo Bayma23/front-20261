@@ -1,3 +1,5 @@
+import "./style.css";
+
 const form = document.getElementById("loginForm");
 
 if (form) {
@@ -8,42 +10,51 @@ if (form) {
   const senhaError = document.getElementById("senhaError");
 
   form.addEventListener("submit", function (event) {
-    event.preventDefault(); // NÃO recarrega a página
+    event.preventDefault();
 
     let valido = true;
 
-    // limpa mensagens
     emailError.textContent = "";
-    senhaError.textContent = "";
+    emailError.style.display = "none";
+    email.classList.remove("input-error");
 
-    // valida email
+    senhaError.textContent = "";
+    senhaError.style.display = "none";
+    senha.classList.remove("input-error");
+
     if (email.value.trim() === "") {
       emailError.textContent = "O Campo de email é obrigatório";
+      emailError.style.display = "block";
+      email.classList.add("input-error");
       valido = false;
     }
 
-    // valida senha
+
     if (senha.value.trim() === "") {
       senhaError.textContent = "O Campo de senha é obrigatório";
+      senhaError.style.display = "block";
+      senha.classList.add("input-error");
       valido = false;
     }
 
-    // se tudo estiver ok
     if (valido) {
-      window.location.href = "/index.html";
+      window.location.href = "./index.html";
     }
   });
 
-  // remove erro ao digitar
   email.addEventListener("input", () => {
     if (email.value.trim() !== "") {
       emailError.textContent = "";
+      emailError.style.display = "none";
+      email.classList.remove("input-error");
     }
   });
 
   senha.addEventListener("input", () => {
     if (senha.value.trim() !== "") {
       senhaError.textContent = "";
+      senhaError.style.display = "none";
+      senha.classList.remove("input-error");
     }
   });
 }
