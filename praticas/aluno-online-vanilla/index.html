@@ -1,22 +1,18 @@
-<!doctype html>
-<html lang="pt-BR">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aluno Online</title>
   <link rel="stylesheet" href="./src/style.css">
 </head>
-
-<body>
-
-<section class="layout">
+<body class="app-container">
 
   <aside class="sidebar">
-
-    <img src="./public/learn.svg" alt="learn">
-    <h2>Aluno Online</h2>
+    <header class="logo">
+      <img src="./public/learn.svg" alt="Logotipo Aluno Online">
+      <h1>Aluno Online</h1>
+    </header>
 
     
     <nav>
@@ -29,61 +25,48 @@
         <li>Sair</li>
       </ul>
     </nav>
-
   </aside>
 
   <main class="content">
-
+    
     <header class="topbar">
-
-      <section>
-        <h1>Olá, Aluno!</h1>
+      <section class="welcome">
+        <h2>Olá, Aluno!</h2>
         <p>Bem-vindo ao portal do aluno</p>
       </section>
-
-      <img 
-      src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
-      alt="Avatar do usuário">
-
+      <img src="./public/avatar.svg" alt="Avatar do usuário" class="avatar">
     </header>
 
-    <section class="cards">
-
-      <h2 hidden>Cards</h2>
-
+    <section class="dashboard-grid">
       <article class="card">
-
-        <h2>Mural de Avisos</h2>
+        <header>
+          <h3>Mural de Avisos</h3>
+        </header>
         <p>Inscrição para o projeto de extensão</p>
         <p>Eleição para representante de turma</p>
-
       </article>
 
       <article class="card">
-
-        <h2>Calendário Acadêmico</h2>
-        <p>23/02 - Início do período letivo 2026-1</p>
-        <p>25/04 - Prazo final para aplicação da P1</p>
-        <p>23/06 - Prazo final para aplicação da P2</p>
-        <p>04/07 - Fim do período letivo 2026-1</p>
-
+        <header>
+          <h3>Calendário Acadêmico</h3>
+        </header>
+        <p><strong>23/02</strong> - Início do período letivo 2026-1</p>
+        <p><strong>25/04</strong> - Prazo final para aplicação da P1</p>
+        <p><strong>23/06</strong> - Prazo final para aplicação da P2</p>
+        <p><strong>04/07</strong> - Fim do período letivo 2026-1</p>
       </article>
 
       <article class="card">
-
-        <h2>Minhas Disciplinas</h2>
-        <p>BI e Date Warehousing</p>
-        <p>Contrução de frontend</p>
-
+        <header>
+          <h3>Minhas Disciplinas</h3>
+        </header>
+        <p>BI e Data Warehousing</p>
+        <p>Construção de Frontend</p>
+        <p>Manutenção de Software e Devops</p>
       </article>
 
     </section>
-
   </main>
-
-</section>
-
-<script type="module" src="/src/main.js"></script>
 
 </body>
 </html>
