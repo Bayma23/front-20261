@@ -1,72 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aluno Online</title>
-  <link rel="stylesheet" href="./src/style.css">
-</head>
-<body class="app-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aluno Online</title>
+  </head>
+  <body class="app-container">
+    <aside class="sidebar">
+      <header class="logo">
+        <img src="./public/learn.svg" alt="Logotipo Aluno Online" />
+        <h1>Aluno Online</h1>
+      </header>
 
-  <aside class="sidebar">
-    <header class="logo">
-      <img src="./public/learn.svg" alt="Logotipo Aluno Online">
-      <h1>Aluno Online</h1>
-    </header>
+      <nav>
+        <ul>
+          <li>Dashboard</li>
+          <li>Notas</li>
+          <li>Faltas</li>
+          <li>Boletos</li>
+          <li>Requerimentos</li>
+          <li>Sair</li>
+        </ul>
+      </nav>
+    </aside>
 
-    
-    <nav>
-      <ul>
-        <li>Dashboard</li>
-        <li>Notas</li>
-        <li>Faltas</li>
-        <li>Boletos</li>
-        <li>Requerimentos</li>
-        <li>Sair</li>
-      </ul>
-    </nav>
-  </aside>
+    <main class="content">
+      <header class="topbar">
+        <section class="welcome">
+          <h2>Olá, Aluno!</h2>
+          <p>Bem-vindo ao portal do aluno</p>
+        </section>
+        <img src="./public/avatar.svg" alt="Avatar do usuário" class="avatar" />
+      </header>
 
-  <main class="content">
-    
-    <header class="topbar">
-      <section class="welcome">
-        <h2>Olá, Aluno!</h2>
-        <p>Bem-vindo ao portal do aluno</p>
+      <section class="dashboard-grid">
+        <article class="card">
+          <header>
+            <h3>Mural de Avisos</h3>
+          </header>
+          <p>Inscrição para o projeto de extensão</p>
+          <p>Eleição para representante de turma</p>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Calendário Acadêmico</h3>
+          </header>
+          <p><strong>23/02</strong> - Início do período letivo 2026-1</p>
+          <p><strong>25/04</strong> - Prazo final para aplicação da P1</p>
+          <p><strong>23/06</strong> - Prazo final para aplicação da P2</p>
+          <p><strong>04/07</strong> - Fim do período letivo 2026-1</p>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Minhas Disciplinas</h3>
+          </header>
+          <p>BI e Data Warehousing</p>
+          <p>Construção de Frontend</p>
+          <p>Manutenção de Software e Devops</p>
+        </article>
       </section>
-      <img src="./public/avatar.svg" alt="Avatar do usuário" class="avatar">
-    </header>
-
-    <section class="dashboard-grid">
-      <article class="card">
-        <header>
-          <h3>Mural de Avisos</h3>
-        </header>
-        <p>Inscrição para o projeto de extensão</p>
-        <p>Eleição para representante de turma</p>
-      </article>
-
-      <article class="card">
-        <header>
-          <h3>Calendário Acadêmico</h3>
-        </header>
-        <p><strong>23/02</strong> - Início do período letivo 2026-1</p>
-        <p><strong>25/04</strong> - Prazo final para aplicação da P1</p>
-        <p><strong>23/06</strong> - Prazo final para aplicação da P2</p>
-        <p><strong>04/07</strong> - Fim do período letivo 2026-1</p>
-      </article>
-
-      <article class="card">
-        <header>
-          <h3>Minhas Disciplinas</h3>
-        </header>
-        <p>BI e Data Warehousing</p>
-        <p>Construção de Frontend</p>
-        <p>Manutenção de Software e Devops</p>
-      </article>
-
-    </section>
-  </main>
-
-</body>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
