@@ -122,5 +122,59 @@
     .cards{
     grid-template-columns:1fr 1fr;
     }
+
+    .login-container{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        }
+        
+        .login-form{
+        background:#f3f3f3;
+        padding:30px;
+        border-radius:10px;
+        width: 500px;
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+        border:1px solid #ccc;
+        }
+        
+        .form-group{
+        display:flex;
+        flex-direction:column;
+        }
+        
+        .form-group input{
+        padding:10px;
+        border:1px solid #ccc;
+        border-radius:5px;
+        }
+        
+        button{
+        padding:10px;
+        background:#303030;
+        color:white;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+        }
+        
+        .error{
+        color:red;
+        font-size:12px;
+        height:14px;
+        }
+
+        .imglogin{
+        display:block;
+        margin:0 auto;
+        width:200px;
     
+        }
+    
+        .namelogin{
+            text-align: center;
+        }
     }

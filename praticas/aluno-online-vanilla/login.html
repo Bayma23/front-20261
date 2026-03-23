@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="./src/style.css">
+  
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <form id="loginForm" class="login-form">
+      
+          <img src="./public/learn.svg" alt="Logo Aluno Online" class="imglogin">
+          
+          <section class="namelogin">
+            <h1>Aluno Online</h1>
+          </section>
+      
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
+            <small class="error" id="emailError"></small>
+          </div>
+      
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha">
+            <small class="error" id="senhaError"></small>
+          </div>
+      
+          <button type="submit">Entrar</button>
+      
+        </form>
+      
+      </main>
+
+<script type="module" src="./src/main.js"></script>
+
+</body>
+</html>
